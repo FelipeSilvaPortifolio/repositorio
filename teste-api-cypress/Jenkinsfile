@@ -4,7 +4,7 @@ pipeline{
         stages{
             stage('Clonar o repositório'){
                 steps{
-                    git branch: 'main', credentialsId: 'gitlab', url: 'https://github.com/FelipeSilvaPortifolio/teste-api-ebac.git'
+                    git branch: 'main', url: 'https://github.com/FelipeSilvaPortifolio/teste-api-ebac.git'
                 }
 
             stage('Instalar dependencias'){
